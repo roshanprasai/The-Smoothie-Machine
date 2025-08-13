@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smoothie Machine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>🍓 Smoothie Machine</h1>
+    <form id="smoothieForm">
+
+        <!-- Smoothie Size -->
+        <label for="size">Choose size:</label>
+        <select id="size" name="size" required>
+            <option value="Small">Small</option>
+            <option value="Medium">Medium</option>
+            <option value="Large">Large</option>
+        </select>
+
+        <!-- Base -->
+        <label for="base">Choose base liquid:</label>
+        <select id="base" name="base" required>
+            <option value="Water">Water</option>
+            <option value="Milk">Milk</option>
+            <option value="Almond Milk">Almond Milk</option>
+            <option value="Coconut Water">Coconut Water</option>
+        </select>
+
+        <!-- Fruits -->
+        <fieldset>
+            <legend>Pick your fruits:</legend>
+            <label><input type="checkbox" value="Banana"> Banana</label>
+            <label><input type="checkbox" value="Strawberry"> Strawberry</label>
+            <label><input type="checkbox" value="Mango"> Mango</label>
+            <label><input type="checkbox" value="Blueberry"> Blueberry</label>
+        </fieldset>
+
+        <!-- Add-ons -->
+        <fieldset>
+            <legend>Extra Add-ons:</legend>
+            <label><input type="checkbox" value="Protein Powder"> Protein Powder</label>
+            <label><input type="checkbox" value="Chia Seeds"> Chia Seeds</label>
+            <label><input type="checkbox" value="Peanut Butter"> Peanut Butter</label>
+        </fieldset>
+
+        <!-- Sweetness -->
+        <fieldset>
+            <legend>Sweetness level:</legend>
+            <label><input type="radio" name="sweetness" value="No sugar" checked> No sugar</label>
+            <label><input type="radio" name="sweetness" value="Low"> Low</label>
+            <label><input type="radio" name="sweetness" value="Medium"> Medium</label>
+            <label><input type="radio" name="sweetness" value="High"> High</label>
+        </fieldset>
+
+        <!-- Customer Name -->
+        <label for="customer">Your name:</label>
+        <input type="text" id="customer" required>
+
+        <!-- Special Instructions -->
+        <label for="notes">Special instructions:</label>
+        <textarea id="notes" rows="3"></textarea>
+
+        <!-- Order Button -->
+        <button type="button" id="orderBtn">Order Smoothie</button>
+    </form>
+
+    <!-- Output -->
+    <div id="orderOutput"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
